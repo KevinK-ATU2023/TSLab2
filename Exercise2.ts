@@ -1,4 +1,4 @@
-var words : string[] = ["Wash car"];
+var words : string[] = [];
 
 function addTask(task: string) {
     words.push(task);
@@ -18,6 +18,7 @@ function deleteTask(task: string) {
     console.log("Number of tasks: "+words.length);
 }
 
+addTask("Wash car");
 addTask("Clean windows");
 addTask("Hoover");
 console.log("\n");
