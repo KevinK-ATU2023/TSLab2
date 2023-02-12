@@ -12,8 +12,16 @@ function listAllTasks() {
     }
 }
 
+function deleteTask(task: string) {
+    words.splice(words.indexOf(task), 1);
+    console.log("Removed "+task);
+    console.log("Number of tasks: "+words.length);
+}
+
 addTask("Clean windows");
 addTask("Hoover");
-
 console.log("\n");
 listAllTasks();
+console.log("\n");
+deleteTask("Hoover");
+
